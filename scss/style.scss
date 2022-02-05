@@ -1,0 +1,29 @@
+@import 'font';
+@import 'mixins';
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: Poppins;
+  @include SWCL(1rem, 400, $marengo, 1);
+}
+
+button {
+  border: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@import 'header';

@@ -1,0 +1,143 @@
+.header {
+  position: relative;
+  background-color: $blueElis;
+  font-size: 16px;
+}
+
+.header--nav {
+  position: absolute;
+  display: flex;
+  padding: 2.375em 0;
+
+  column-gap: 4.03125em;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(105%);
+  }
+}
+
+.nav--list {
+  display: flex;
+  margin-right: auto;
+
+  column-gap: 1.875em;
+}
+
+.nav--item {
+}
+
+.nav--link {
+  display: block;
+  position: relative;
+  @include SWCL(0.875em, 500, $marengo, 1.3125);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &:visited {
+    color: $marengo;
+  }
+
+  &::after {
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    bottom: -0.7143em;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 0.143em;
+    background-color: lighten($marengo, 15px);
+    opacity: 0;
+    border-radius: 0.3571em;
+    transition: all 0.2s ease-in;
+  }
+
+  &:hover {
+    &::after {
+      bottom: -0.2143em;
+      opacity: 1;
+    }
+    color: darken($marengo, 20);
+    transform: scaleX(105%);
+  }
+
+  &:active {
+    color: lighten($marengo, 10);
+  }
+}
+
+.nav--buttons {
+  display: flex;
+  column-gap: 1.125em;
+}
+
+.button {
+  font-family: Poppins;
+  cursor: pointer;
+
+  padding: 0.7143em 1.43em;
+  border-radius: 0.57143em;
+
+  @include SWCL(0.875em, 500, $white, 1.3125);
+  background-color: $gentianBlue;
+  transition: all 0.2s ease-in-out;
+
+  &:hover:not(.sign-up) {
+    background-color: lighten($gentianBlue, 15);
+    transform: scale(105%);
+    border-radius: 0.7143em;
+  }
+}
+
+.sign-up {
+  background-color: transparent;
+  padding: 0;
+  color: $gentianBlue;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: lighten($gentianBlue, 15);
+    transform: scale(110%);
+  }
+}
+
+.nav--button {
+}
+
+.header--inf-block {
+  display: flex;
+  column-gap: 4.1875em;
+  padding-top: 7.125em;
+}
+
+.header--blok-left {
+  flex: 0 0 50.37%;
+  margin-top: 5.6875em;
+}
+
+.header--descr {
+  margin-bottom: 0.444em;
+  @include SWCL(1.125em, 500, $pigeonBlue, 1.6875);
+}
+
+.header--title {
+  margin-bottom: 0.46875em;
+  @include SWCL(4em, 700, $darkBlue, 1.1875);
+}
+
+.header--subtitle {
+  @include SWCL(1.125em, 400, $marengo, 2);
+  margin-bottom: 2.222em;
+}
+.header--button {
+}
+.header--block-right {
+}
+.header--img {
+}

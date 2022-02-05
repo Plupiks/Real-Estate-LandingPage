@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Regular.ttf"); }
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Medium.ttf"); }
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-SemiBold.ttf"); }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none; }
+
+body {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #5a6473;
+  line-height: 1; }
+
+button {
+  border: none; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.header {
+  position: relative;
+  background-color: #e6f0ff;
+  font-size: 16px; }
+
+.header--nav {
+  position: absolute;
+  display: flex;
+  padding: 2.375em 0;
+  column-gap: 4.03125em;
+  align-items: center; }
+
+.logo {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; }
+  .logo:hover {
+    transform: scale(105%); }
+
+.nav--list {
+  display: flex;
+  margin-right: auto;
+  column-gap: 1.875em; }
+
+.nav--link {
+  display: block;
+  position: relative;
+  font-size: 0.875em;
+  font-weight: 500;
+  color: #5a6473;
+  line-height: 1.3125;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out; }
+  .nav--link:visited {
+    color: #5a6473; }
+  .nav--link::after {
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    bottom: -0.7143em;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 0.143em;
+    background-color: #7f8a9b;
+    opacity: 0;
+    border-radius: 0.3571em;
+    transition: all 0.2s ease-in; }
+  .nav--link:hover {
+    color: #2d323a;
+    transform: scaleX(105%); }
+    .nav--link:hover::after {
+      bottom: -0.2143em;
+      opacity: 1; }
+  .nav--link:active {
+    color: #717d8f; }
+
+.nav--buttons {
+  display: flex;
+  column-gap: 1.125em; }
+
+.button {
+  font-family: Poppins;
+  cursor: pointer;
+  padding: 0.7143em 1.43em;
+  border-radius: 0.57143em;
+  font-size: 0.875em;
+  font-weight: 500;
+  color: white;
+  line-height: 1.3125;
+  background-color: #0f1b4c;
+  transition: all 0.2s ease-in-out; }
+  .button:hover:not(.sign-up) {
+    background-color: #1c328c;
+    transform: scale(105%);
+    border-radius: 0.7143em; }
+
+.sign-up {
+  background-color: transparent;
+  padding: 0;
+  color: #0f1b4c;
+  transition: all 0.2s ease-in-out; }
+  .sign-up:hover {
+    color: #1c328c;
+    transform: scale(110%); }
+
+.header--inf-block {
+  display: flex;
+  column-gap: 4.1875em;
+  padding-top: 7.125em; }
+
+.header--blok-left {
+  flex: 0 0 50.37%;
+  margin-top: 5.6875em; }
+
+.header--descr {
+  margin-bottom: 0.444em;
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #687691;
+  line-height: 1.6875; }
+
+.header--title {
+  margin-bottom: 0.46875em;
+  font-size: 4em;
+  font-weight: 700;
+  color: #000336;
+  line-height: 1.1875; }
+
+.header--subtitle {
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #5a6473;
+  line-height: 2;
+  margin-bottom: 2.222em; }
