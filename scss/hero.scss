@@ -2,22 +2,22 @@
   position: relative;
   background-color: $blueElis;
   font-size: 16px;
-  background-image: url(../img/house-illustration.svg);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 36.5em 38.75em;
 }
 
 .hero--wrapper {
   display: flex;
   column-gap: 4.1875em;
   padding-top: 7.125em;
-  padding-bottom: 9.8125em;
 }
 
 .hero--blok-left {
   flex: 0 0 50.37%;
   margin-top: 5.6875em;
+}
+
+.hero--block-right {
+  display: flex;
+  align-items: flex-end;
 }
 
 .hero--descr {
@@ -38,8 +38,7 @@
 }
 
 // Adaptive
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1340px) {
   .header {
     font-size: 14px;
   }
