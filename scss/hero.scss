@@ -6,8 +6,13 @@
 
 .hero--wrapper {
   display: flex;
+  background-image: url(../img/house-illustration.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right -100px;
+  background-size: 584px 620px;
   column-gap: 4.1875em;
   padding-top: 7.125em;
+  padding-bottom: 9.8125em;
 }
 
 .hero--blok-left {
@@ -30,19 +35,6 @@
   margin-bottom: 2.222em;
 }
 .hero--button {
-}
-
-.hero--block-right {
-  display: flex;
-  align-items: flex-end;
-}
-.hero--img {
-  width: 36.5em;
-  height: auto;
-  & svg {
-    max-width: 100%;
-    height: auto;
-  }
 }
 
 // Adaptive
