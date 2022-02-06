@@ -1,0 +1,57 @@
+.hero {
+  position: relative;
+  background-color: $blueElis;
+  font-size: 16px;
+}
+
+.hero--wrapper {
+  display: flex;
+  column-gap: 4.1875em;
+  padding-top: 7.125em;
+}
+
+.hero--blok-left {
+  flex: 0 0 50.37%;
+  margin-top: 5.6875em;
+}
+
+.hero--descr {
+  margin-bottom: 0.444em;
+  @include SWCL(1.125em, 500, $pigeonBlue, 1.6875);
+}
+
+.hero--title {
+  margin-bottom: 0.46875em;
+  @include SWCL(4em, 700, $darkBlue, 1.1875);
+}
+
+.hero--subtitle {
+  @include SWCL(1.125em, 400, $marengo, 2);
+  margin-bottom: 2.222em;
+}
+.hero--button {
+}
+
+.hero--block-right {
+  display: flex;
+  align-items: flex-end;
+}
+.hero--img {
+  width: 36.5em;
+  height: auto;
+  & svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Adaptive
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}

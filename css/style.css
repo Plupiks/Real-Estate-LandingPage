@@ -22,6 +22,9 @@ body {
   color: #5a6473;
   line-height: 1; }
 
+.wrapper {
+  overflow: hidden; }
+
 button {
   border: none; }
 
@@ -31,12 +34,13 @@ button {
   padding: 0 15px; }
 
 .header {
-  position: relative;
-  background-color: #e6f0ff;
-  font-size: 16px; }
-
-.header--nav {
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%; }
+
+.header--wrapper {
   display: flex;
   padding: 2.375em 0;
   column-gap: 4.03125em;
@@ -48,12 +52,12 @@ button {
   .logo:hover {
     transform: scale(105%); }
 
-.nav--list {
+.header--menu {
   display: flex;
   margin-right: auto;
   column-gap: 1.875em; }
 
-.nav--link {
+.menu--link {
   display: block;
   position: relative;
   font-size: 0.875em;
@@ -62,9 +66,9 @@ button {
   line-height: 1.3125;
   text-decoration: none;
   transition: all 0.2s ease-in-out; }
-  .nav--link:visited {
+  .menu--link:visited {
     color: #5a6473; }
-  .nav--link::after {
+  .menu--link::after {
     display: block;
     pointer-events: none;
     position: absolute;
@@ -77,16 +81,16 @@ button {
     opacity: 0;
     border-radius: 0.3571em;
     transition: all 0.2s ease-in; }
-  .nav--link:hover {
+  .menu--link:hover {
     color: #2d323a;
     transform: scaleX(105%); }
-    .nav--link:hover::after {
+    .menu--link:hover::after {
       bottom: -0.2143em;
       opacity: 1; }
-  .nav--link:active {
+  .menu--link:active {
     color: #717d8f; }
 
-.nav--buttons {
+.header--buttons {
   display: flex;
   column-gap: 1.125em; }
 
@@ -115,32 +119,52 @@ button {
     color: #1c328c;
     transform: scale(110%); }
 
-.header--inf-block {
+.hero {
+  position: relative;
+  background-color: #e6f0ff;
+  font-size: 16px; }
+
+.hero--wrapper {
   display: flex;
   column-gap: 4.1875em;
   padding-top: 7.125em; }
 
-.header--blok-left {
+.hero--blok-left {
   flex: 0 0 50.37%;
   margin-top: 5.6875em; }
 
-.header--descr {
+.hero--descr {
   margin-bottom: 0.444em;
   font-size: 1.125em;
   font-weight: 500;
   color: #687691;
   line-height: 1.6875; }
 
-.header--title {
+.hero--title {
   margin-bottom: 0.46875em;
   font-size: 4em;
   font-weight: 700;
   color: #000336;
   line-height: 1.1875; }
 
-.header--subtitle {
+.hero--subtitle {
   font-size: 1.125em;
   font-weight: 400;
   color: #5a6473;
   line-height: 2;
   margin-bottom: 2.222em; }
+
+.hero--block-right {
+  display: flex;
+  align-items: flex-end; }
+
+.hero--img {
+  width: 36.5em;
+  height: auto; }
+  .hero--img svg {
+    max-width: 100%;
+    height: auto; }
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    font-size: 14px; } }

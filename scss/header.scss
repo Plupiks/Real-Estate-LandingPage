@@ -1,11 +1,12 @@
 .header {
-  position: relative;
-  background-color: $blueElis;
-  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
-.header--nav {
-  position: absolute;
+.header--wrapper {
   display: flex;
   padding: 2.375em 0;
 
@@ -22,17 +23,17 @@
   }
 }
 
-.nav--list {
+.header--menu {
   display: flex;
   margin-right: auto;
 
   column-gap: 1.875em;
 }
 
-.nav--item {
+.menu--item {
 }
 
-.nav--link {
+.menu--link {
   display: block;
   position: relative;
   @include SWCL(0.875em, 500, $marengo, 1.3125);
@@ -72,9 +73,10 @@
   }
 }
 
-.nav--buttons {
+.header--buttons {
   display: flex;
   column-gap: 1.125em;
+  // padding-right: ;
 }
 
 .button {
@@ -107,37 +109,5 @@
   }
 }
 
-.nav--button {
-}
-
-.header--inf-block {
-  display: flex;
-  column-gap: 4.1875em;
-  padding-top: 7.125em;
-}
-
-.header--blok-left {
-  flex: 0 0 50.37%;
-  margin-top: 5.6875em;
-}
-
-.header--descr {
-  margin-bottom: 0.444em;
-  @include SWCL(1.125em, 500, $pigeonBlue, 1.6875);
-}
-
-.header--title {
-  margin-bottom: 0.46875em;
-  @include SWCL(4em, 700, $darkBlue, 1.1875);
-}
-
-.header--subtitle {
-  @include SWCL(1.125em, 400, $marengo, 2);
-  margin-bottom: 2.222em;
-}
 .header--button {
-}
-.header--block-right {
-}
-.header--img {
 }

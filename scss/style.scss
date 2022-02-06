@@ -16,6 +16,10 @@ body {
   @include SWCL(1rem, 400, $marengo, 1);
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 button {
   border: none;
 }
@@ -27,3 +31,4 @@ button {
 }
 
 @import 'header';
+@import 'hero';
