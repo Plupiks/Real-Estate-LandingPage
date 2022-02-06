@@ -2,14 +2,14 @@
   position: relative;
   background-color: $blueElis;
   font-size: 16px;
+  background-image: url(../img/house-illustration.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 36.5em 38.75em;
 }
 
 .hero--wrapper {
   display: flex;
-  background-image: url(../img/house-illustration.svg);
-  background-repeat: no-repeat;
-  background-position: bottom right -100px;
-  background-size: 584px 620px;
   column-gap: 4.1875em;
   padding-top: 7.125em;
   padding-bottom: 9.8125em;
